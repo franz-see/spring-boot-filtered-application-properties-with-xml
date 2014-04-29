@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Franz Allan See">
+
+    <title>Demo</title>
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sign.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+
+    <form class="form" action="api/signup" method="POST">
+        <h2 class="form-heading">Create new account</h2>
+        <input name="username" type="text" class="form-control form-control-top" placeholder="Username" required autofocus>
+        <input name="password" type="password" class="form-control form-control-middle" placeholder="Password" required>
+        <input name="confirmPassword" type="password" class="form-control form-control-bottom" placeholder="Confirm Password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+        <div class="form-footer-link"><a href="index.html">Already a user? Login</a></div>
+        <div id="error_message" class="form-footer-link alert alert-danger"></div>
+    </form>
+
+</div>
+<!-- /container -->
+
+<script type="text/javascript" src="js/jquery/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="js/purl.js"></script>
+<script type="text/javascript" src="js/signup.js"></script>
+
+
+</body>
+</html>

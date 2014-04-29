@@ -1,0 +1,22 @@
+<settings>
+    <profiles>
+
+        <profile>
+            <id>demo-local</id>
+            <activation>
+                <property>
+                    <name>!demo.env</name>
+                </property>
+            </activation>
+            <properties>
+                <local.demo.db.username>root</local.demo.db.username>
+                <local.demo.db.password>root</local.demo.db.password>
+                <local.demo.db.jdbc.url>jdbc:mysql://localhost:3306/demo</local.demo.db.jdbc.url>
+                <local.demo.db.jdbc.driver>com.mysql.jdbc.Driver</local.demo.db.jdbc.driver>
+            </properties>
+        </profile>
+
+    </profiles>
+</settings>
+
+
